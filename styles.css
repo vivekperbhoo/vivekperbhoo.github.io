@@ -1,0 +1,442 @@
+body {
+  background-image: url('./Assets/Grid.png');
+  background-size: cover;       
+  background-repeat: no-repeat; 
+  background-position: center;  
+  overflow-x: hidden;
+}
+
+.nav-item {
+    height: 60px !important;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    background-color: #1C2FFF;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: background-color ease-in 0.2s;
+}
+
+.link {
+    text-align: center;
+    color: white !important;
+    font-family: "Anybody", sans-serif !important;
+
+}
+
+.nav-item:hover {
+    background-color: black;
+    transition: background-color ease-in 0.2s;
+}
+
+
+.yellow-cont{
+    margin-top: 5rem;
+    padding-inline: 5rem !important;
+    min-height: fit-content ;
+}
+
+.yellow-box {
+    background-color: #D0FF00;
+    height: 12rem;
+    min-height: fit-content;
+    animation: border-in 5s ease-in;
+        border: 3px black solid !important;
+}
+
+.yellow-box.one {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    animation: slide-in-left 0.5s ease-out;
+    
+}
+
+.yellow-box.two {
+    margin-top: -20px;
+    animation: slide-in-right 0.8s ease-out;
+    position: relative;
+    z-index: 2;
+
+}
+
+@keyframes border-in {
+    0% {
+    border: 3px transparent solid !important;
+    }
+
+    100% {
+    border: 3px black solid !important;
+    }
+}
+
+@keyframes slide-in-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-right{
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*BLACK BOX AND TEXT*/
+
+.black-box {
+    height: 22%;
+    background: black;
+    width: 12rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.black-box.one {
+    margin-right: 6px;
+    margin-top: 6px;
+}
+
+.black-box.two {
+    margin-top: 6px;
+}
+
+.who-i-am-text {
+    color: #D0FF00;
+    align-items: center;
+    font-family: "Anton", sans-serif;
+    font-size: 1.7rem;
+}
+
+/*WHO I AM AND HOW I WORK TEXT*/
+
+.about-me-text {
+    font-family: "Anybody", sans-serif;
+    margin-top: 5px;
+    width: 85%;
+}
+
+.about-me-text.one {
+    text-align: end;
+    margin-right: 5%;
+}
+
+.about-me-text.two {
+    text-align: left;
+    margin-left: 5%;
+}
+
+/*ABOUT AND ME TEXT*/
+
+.about-text {
+    font-family: "Anybody", sans-serif;
+    font-size: 4.7rem;
+    color: #1C2FFF;
+    margin-left: 1rem;
+    margin-top: -20px;
+
+}
+
+.me-cont {
+    /* margin-top: -3rem !important; */
+    display: flex;
+    justify-content: end;    
+    padding: 0 !important;
+    margin-left: 5px;
+}
+
+.me-text {
+    text-align: end;
+    font-family: "Anybody", sans-serif;
+    font-size: 4.7rem;
+    color: #1C2FFF;
+}
+
+.img-cont {
+    position: absolute;
+    width: 100%;
+    top: -4%;
+}
+
+.me-img {
+    height: 50rem;
+}
+
+.scroll-text {
+    font-family: "Anybody";
+    color: #1C2FFF;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.cont {
+    border-top: solid 1px #1C2FFF;
+    border-bottom: solid 1px #1C2FFF;
+    background-color: white;
+    white-space: nowrap;      /* Prevents text from wrapping */
+    overflow: hidden;         /* Hides anything that overflows */
+    display: block;
+}
+
+.span-about-me {
+    max-width: none;
+}
+
+.about-me-scroll-cont {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Anybody", sans-serif;
+    color: #1C2FFF;
+    font-size: 1.8rem;
+    animation: scroll-left 5s linear infinite; 
+
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.delimiter {
+    height: 70%;
+    width: 5px;
+    background-color: #1C2FFF;
+}
+
+.my-proj-text {
+    line-height: 1.7;
+    margin-top: 10rem;
+    text-align: left;
+    font-family: "Anybody", sans-serif;
+    font-size: 4.7rem;
+    color: #1C2FFF;
+}
+
+.my-projects-cont {
+    margin-top: 14rem;
+} 
+
+.card {
+    width: 80%;
+    padding: 0.5rem !important;
+    height: 25rem !important;
+    border-radius : 0px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    background-color: #D0FF00 !important;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.2);
+    z-index: 2;
+    transition: transform 0.3s ease;
+}
+
+.card-1, .card-3 {
+    margin-left: 3rem;
+}
+
+.proj-banner {
+    width: 20%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.proj-title {
+    font-family: "Anton", sans-serif;
+    color: #D0FF00;
+    width: 10rem;
+    height: fit-content;
+    margin-bottom: 5rem;
+    font-size: 4rem;
+    max-width: none;
+    white-space: nowrap;
+    transform: rotate(-90deg);
+}
+
+.img-description-cont {
+    height: 100%;
+    width: 80%;
+    padding-left: 0.5rem;
+}
+
+.proj-img {
+    width: 100%;
+    height: 60%;
+    background-color: #1C2FFF;
+}
+
+.description-header {
+    font-family: "Anybody", sans-serif;
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.description-text {
+    font-family: "Anybody", sans-serif;
+    font-size: 0.8rem;
+}
+
+.contact-me-text {
+    line-height: 1.7;
+    margin-top: 10rem;
+    text-align: left;
+    font-family: "Anybody", sans-serif;
+    font-size: 4.7rem;
+    color: #1C2FFF;
+    
+}
+
+.form-and-contact-cont {
+    margin-top: 3rem;
+}
+
+.form-label {
+    font-family: "Anybody", sans-serif;
+    font-size: 1.5rem;
+    background-color: black;
+    color: white;
+    padding-inline: 1rem;
+}
+
+.form-control {
+    background-color: #D0FF00 !important;
+    border-radius: 0 !important;
+    border: 3px black solid !important;
+    z-index: 2;
+    position: relative;
+    font-family: "Anybody", sans-serif;
+}
+
+.name-field, .email-field {
+    height: 4rem;
+    width: 60% !important;
+}
+
+.email-label-cont {
+    display: flex;
+    justify-content: end;
+}
+
+.email-label {
+    text-align: end;
+    margin-top: 2rem;
+}
+
+.email-field {
+    margin-left: 40%;
+}
+
+.message-label {
+    margin-top: 2rem;
+}
+
+.message-field {
+    height: 10rem;
+}
+
+.submit-btn {
+    position: relative;
+    width: 30% !important;
+    margin-inline: 35% !important;
+    margin-top: 1rem;
+    border-radius: 0 !important;
+    background: black !important;
+    font-family: "Anton", sans-serif !important;
+    font-size: 2rem !important;
+    color: #D0FF00 !important;
+    z-index: 2;
+}
+
+.plane-and-scroll-cont {
+    position: relative;
+    margin-top: -45rem;
+}
+
+.scroll-proj {
+    margin-top: 5rem;
+}
+
+.project-link {
+    text-decoration: none;
+}
+
+@media (max-width : 1199px) {
+    .img-cont, .plane-and-scroll-cont {
+        z-index: -1;
+    }
+
+    .description-text {
+        font-size: 0.7rem;
+    }
+
+}
+
+@media (max-width : 991px) {
+    .contact-me-text {
+        text-align: center;
+        margin-top: 8rem;
+    }
+}
+
+@media (max-width : 767px) {
+    .about-me-text {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width : 662px) {
+    .about-text {
+        margin-left: -0.5rem;
+    }
+}
+
+@media (max-width : 575px) {
+    .about-me-text {
+        font-size: 0.7rem;
+    }
+
+    .card {
+        margin-inline: auto;
+    }
+}
+
+@media (min-width: 992px){
+    .my-projects-cont {
+        margin-top: 20rem;
+        margin-bottom: 10rem;
+    }
+
+    .form-and-contact-cont {
+        margin-top: 0rem;
+    }
+
+    .me-cont {
+        margin-top: -2rem !important;
+    }
+}
+
