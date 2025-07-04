@@ -440,6 +440,7 @@ body {
     }
 }
 
-.knight {
-    object-fit: cover;
+.knight, .shoe {
+    object-fit: cover !important;
 }
+
